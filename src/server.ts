@@ -44,7 +44,7 @@ export const createServer = () => {
                     ws.send(responseString)
                     return
                 }
-
+ 
                 if (response.type === 'PARTIES_LIST') {
                     ws.send(responseString)
                     return

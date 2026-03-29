@@ -65,6 +65,8 @@ class PartyService {
 
         if(!party) return null;
 
+        if (party.votes <= 0) return party;
+
         party.votes -= 1
         
         return party
